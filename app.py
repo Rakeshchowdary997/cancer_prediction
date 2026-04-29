@@ -779,10 +779,3 @@ with tab_about:
     st.caption("Built with ❤️ using Streamlit · YBI Foundation Project")
 
 
-import os
-import pickle
-
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-
-model = pickle.load(open(os.path.join(BASE_DIR, "model.pkl"), "rb"))
-scaler = pickle.load(open(os.path.join(BASE_DIR, "scaler.pkl"), "rb"))
